@@ -5,3 +5,32 @@
     border-radius: 50px;
     position: absolute;
 }
+
+.random-box {
+    width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        /* opacity: 0; */
+}
+
+.random-box__counter {
+    font-size: 50px;
+    text-align: center;
+}
+
+.random-doc__counter {
+    font-size: 50px;
+        text-align: center;
+        color: red;
+}
+
+.input {
+    width: 400px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}

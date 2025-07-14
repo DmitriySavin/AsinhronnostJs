@@ -1,13 +1,14 @@
 const boxRef = document.querySelector(".box");
 
-// function trackingItems() {
+let x = 0;
+let y = 0;
 
-// }
+document.addEventListener('mousemove', (event) => {
+  x = event.clientX;
+  y = event.clientY;
+});
 
-const trackingItems = 
-    document.addEventListener("mousemove", (event) => {
-        setInterval(() => {
-    boxRef.style.top = `${event.clientY}px`;
-    boxRef.style.left = `${event.clientX}px`;
-  });
+setInterval(() => {
+  boxRef.style.top = `${y}px`;
+  boxRef.style.left = `${x}px`;
 }, 2000);
